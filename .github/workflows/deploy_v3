@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Thay thế 'main' bằng nhánh mà bạn muốn triển khai
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14' # Hoặc phiên bản Node.js bạn đang sử dụng
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the project
+      run: npm run build
+
+    - name: Configure Git
+      run: |
+        git config --global user.email "nguyenkimthanh25122002@gmail.com"  # Thay thế bằng email của bạn
+        git config --global user.name "nthanh12"         # Thay thế bằng tên của bạn
+
+    - name: Deploy
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }} # Sử dụng token từ secrets
+      run: npm run deploy
