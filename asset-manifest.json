@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fe-teaching/static/css/main.9615a238.css",
+    "main.js": "/fe-teaching/static/js/main.681ec9e6.js",
+    "static/js/453.8f3e8fad.chunk.js": "/fe-teaching/static/js/453.8f3e8fad.chunk.js",
+    "index.html": "/fe-teaching/index.html",
+    "main.9615a238.css.map": "/fe-teaching/static/css/main.9615a238.css.map",
+    "main.681ec9e6.js.map": "/fe-teaching/static/js/main.681ec9e6.js.map",
+    "453.8f3e8fad.chunk.js.map": "/fe-teaching/static/js/453.8f3e8fad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9615a238.css",
+    "static/js/main.681ec9e6.js"
+  ]
+}
